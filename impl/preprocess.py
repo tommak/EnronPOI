@@ -56,10 +56,10 @@ def preprocess(dictionary):
     return fixed_df.to_dict(orient="index")
 
 def preprocess_df(fixed_df):
-    fixed_df["from_poi_perc"] = fixed_df["from_poi_to_this_person"]/fixed_df["to_messages"]
-    fixed_df["to_poi_perc"] = fixed_df["from_this_person_to_poi"]/fixed_df["from_messages"]
+    fixed_df["from_poi_to_this_person_perc"] = fixed_df["from_poi_to_this_person"]/fixed_df["to_messages"]
+    fixed_df["from_this_person_to_poi_perc"] = fixed_df["from_this_person_to_poi"]/fixed_df["from_messages"]
 
-    fixed_df["shared_with_poi_perc"] = fixed_df["shared_receipt_with_poi"]/fixed_df["to_messages"]
+    fixed_df["shared_receipt_with_poi_perc"] = fixed_df["shared_receipt_with_poi"]/fixed_df["to_messages"]
     fixed_df["gross_payments"] = fixed_df["total_payments"] - 2*fixed_df["deferred_income"]
     fixed_df["gross_stock_value"] =  fixed_df["total_stock_value"] - 2*fixed_df["restricted_stock_deferred"]
 
