@@ -38,8 +38,8 @@ def clean(df):
             else:
                 fixed_df.loc[person, ordered_columns[i]] = df.loc[person, ordered_columns[i+shift]]
 
-    fixed_df.loc["BANNANTINE JAMES M", set(total_payment_const) - {"expenses"} ] = np.nan
-    fixed_df.loc["BANNANTINE JAMES M", "total_payments"] = fixed_df.loc["BANNANTINE JAMES M", "expenses"]
+    # fixed_df.loc["BANNANTINE JAMES M", set(total_payment_const) - {"expenses"} ] = np.nan
+    # fixed_df.loc["BANNANTINE JAMES M", "total_payments"] = fixed_df.loc["BANNANTINE JAMES M", "expenses"]
 
 
 
