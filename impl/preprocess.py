@@ -49,7 +49,7 @@ def preprocess(dictionary):
     #Convert data frame to pandas data frame and perform cleaning
     df = pd.DataFrame.from_dict(dictionary, orient="index")
     fixed_df = clean(df)
-    fixed_df = preprocess_df(df)
+    fixed_df = preprocess_df(fixed_df)
 
     #Convert data back to dictionary
     fixed_df.replace(np.nan, "NaN", inplace=True)
