@@ -1,5 +1,7 @@
 **Introduction**
 
+Presentation can be found [here](https://1drv.ms/p/s!AunDoyMcavlJgRr_j1477_D8Wn40)
+
 In 2000, Enron was one of the largest companies in the United States. By 2002, it had collapsed into bankruptcy due to widespread corporate fraud. In the resulting Federal investigation, tens of thousands of emails and detailed financial data for top executives entered into the public record. The goal of this project is to build a person of interest (POI) identifier based on Enron financial and email data. List of persons of interest in the fraud case was hand-generated.
 
 _Dataset description_
